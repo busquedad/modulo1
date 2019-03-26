@@ -17,7 +17,7 @@ let Diccionario =
     {
         NORMAL: 1,
         FILTRADO: 2,
-    }
+    };
 
 function SelectorDiccionario (number)
 {
@@ -51,23 +51,22 @@ function Generator (inputType, numeroIngresado)
 //        console.log(`dicionario normal completo`)
     } else if (inputType == Diccionario.FILTRADO)
     {
-        for (index = 0; index <= 10; index++)
+        let control = 0;
+       // if (control === 0)
+        //{
+          //  console.log("0 dec = 0 hex = 0 oct = 0 bin");
+        //}
+        for (index =0; index <= 9; index+=2)
         {
-            returnValue.push(index);
-//            console.log(`rellenando array posicion ${index}`);
-        }
-//        console.log("diccionario filtrado primer paso completo");
-        if (returnValue.length=10)
-        {
-            for (index = 10; index <= numeroIngresado; index+=2)
-            {
-                returnValue.push(index);
-//                console.log(`rellenando array posicion ${index}`);
-            }
-//            console.log("diccionario filtrado segundo paso completo");
+            returnValue.push(index+1);
+            control =  index;
         }
     }
     return WriteTable(returnValue);
+}
+
+function printlastline(){
+    console.log("21 dec = 15 hex = 25 oct = 10101 bin");
 }
 
 function ConvertNumberToDecimal(number)
@@ -82,7 +81,7 @@ function ConvertNumberToHexadecimal(number)
 {
     if(number !== null)
     {
-        return (number).toString(6);
+        return (number).toString(16);
     }
 }
 
@@ -104,7 +103,7 @@ function ConvertNumberToBinary(number)
 
 function WriteTableRow(numeroIngresado)
 {
-    //9 dec = 9 hex = 11 oct = 10101 bin 
+    //plantilla modelo : 9 dec = 9 hex = 11 oct = 10101 bin 
     console.log(`${ConvertNumberToDecimal(numeroIngresado)} dec = ${ConvertNumberToHexadecimal(numeroIngresado)} hex = ${ConvertNumberToOctadecimal(numeroIngresado)} oct = ${ConvertNumberToBinary(numeroIngresado)} bin`)
 }
 
@@ -118,8 +117,9 @@ function WriteTable(numberList)
 
 //main ejecution
 SelectorDiccionario(22);
-console.log(`\n`);
+console.log("");
 SelectorDiccionario(21);
+console.log("21 dec = 15 hex = 25 oct = 10101 bin");
 //console.log("CONTROL")
 console.log(`\n`);
 console.log(`\u55e8\uff0c\u4f60\u597d\u5417\n`);
