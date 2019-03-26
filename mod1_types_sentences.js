@@ -104,7 +104,8 @@ function ConvertNumberToBinary(number)
 
 function WriteTableRow(numeroIngresado)
 {
-    console.log(`${numeroIngresado} dec = ${ConvertNumberToDecimal(numeroIngresado)} | ${numeroIngresado} hex = ${ConvertNumberToHexadecimal(numeroIngresado)} | ${numeroIngresado} oct = ${ConvertNumberToOctadecimal(numeroIngresado)} | ${numeroIngresado} bin = ${ConvertNumberToBinary(numeroIngresado)}`)
+    //9 dec = 9 hex = 11 oct = 10101 bin 
+    console.log(`${ConvertNumberToDecimal(numeroIngresado)} dec = ${ConvertNumberToHexadecimal(numeroIngresado)} hex = ${ConvertNumberToOctadecimal(numeroIngresado)} oct = ${ConvertNumberToBinary(numeroIngresado)} bin`)
 }
 
 function WriteTable(numberList)
@@ -121,3 +122,5 @@ console.log(`\n`);
 SelectorDiccionario(21);
 //console.log("CONTROL")
 console.log(`\n`);
+console.log(`\u55e8\uff0c\u4f60\u597d\u5417\n`);
+console.log(` \"The program has finished\"`);
