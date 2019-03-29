@@ -1,5 +1,9 @@
 # Entrega mooc_node-mod1_types_sentences
 
+Objetivo
+Practicar con las sentencias (variables, asignaciones, if/else, bucles,..), los tipos (number, string,
+boolean) y los objetos básicos (console, Date, ..) de JavaScript.
+
 Puede descargar este programa
 al ordenador local, como un fichero ZIP. El programa puede clonarse también con `git clone ..` (si
 git está instalado).
@@ -36,3 +40,5 @@ $             ## El directorio de trabajo contiene ahora el fichero: mooc_node-m
 ```
 
 El fichero `mooc_node-mod1_types_sentences.zip` contiene los ficheros de la practica comprimidos y puede subirse a la plataforma para su evaluación.
+
+UPM - Miriadax - https://miriadax.net/web/nodemooc
